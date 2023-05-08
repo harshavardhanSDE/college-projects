@@ -145,6 +145,7 @@ class users {
             for (int index = 0; index < 9; index++ ){
             cout << seattypes[index] << " | "; 
             }
+            cout << "\n"; 
             string seatType;
             cin >> seatType; 
             cout << "\n" <<"Select your meal preference: ( veg / non-veg ) " << "\n";
@@ -191,10 +192,7 @@ class users {
                                      "Air-Conditioned Two-Tier Class (3)"
                                     "Air-Conditioned Three-Tier Class (4)",
                                      "First Class (5)",
-                                     "AC Chair Class (6)",
-                                     "Sleeper Class (7)",
-                                     "Second Class (8)",
-                                     "Unreserved/General Class (9)" };
+                                     "AC Chair Class (6)" };
             for (int index = 0; index < 9; index++){
                 cout << seattypes[index] << " | "; 
             }
@@ -215,8 +213,8 @@ class users {
 
 
                 case 2: 
-                    cout << "The air-conditioned first class consists of 2-berth or 4-berth sleeper compartments, with lockable doors. The"
-                    "compartments are spacious, clean and well-maintained. Each compartment has a washbasin. Toilets are available at the"
+                    cout << "The air-conditioned first class consists of 2-berth or 4-berth sleeper compartments, with lockable doors. The" << "\n" <<
+                    "compartments are spacious, clean and well-maintained. Each compartment has a washbasin. Toilets are available at the" << "\n" <<
                     "end of each carriage. A pillow, sheet, blanket and towel are provided for each berth." << "\n\n" <<
                     "The air-conditioned first class is the most expensive among all the sleeper classes, and it provides a high level of comfort"
                     "and privacy. It is cleaner and quieter than non-air-conditioned sleeper classes." << "\n\n"; 
@@ -233,7 +231,20 @@ class users {
                     "afford AC first class." << "\n\n"; 
                     break; 
                 case 4: 
-                    cout << "There are 6 berths in each open-plan compartment, 2 lower berths, 2 middle berths and 2 upper berths. There are also"; 
+                    cout << "There are 6 berths in each open-plan compartment, 2 lower berths, 2 middle berths and 2 upper berths. There are also" << "\n" << 
+                    "side berths (lower berth and upper berth) across the hall on the other side of the compartment. Unlike AC 2-tier class, AC" << "\n" << 
+                    "3-tier class doesn\'t have curtains to separate the berths for privacy concern. A pillow, sheet and blanket are provided for" << "\n" <<
+                    "each berth." << "\n\n"; 
+                    break;  
+                case 5: 
+                    cout << "First class has the same layout as air-conditioned first class, but without air-conditioning." << "\n"<<
+                    "There are 4 berths in a lockable compartment. Sheets and blankets are offered at extra charge. Nowadays, you " << "\n" <<
+                    "can only find first class on a few Indian trains." << "\n\n";
+                    break; 
+                case 6: 
+                    cout << "The air-conditioned seat class is arranged as 3+2 seats across the carriage. It can be found on daytime" <<"\n"<< 
+                    "and short distance trains. It is an affordable and comfortable way for train journeys less than 5 hours." << "\n\n"; 
+                    break; 
             }
         }
 
@@ -309,3 +320,5 @@ int main(){
         }
         delete user; 
 }
+
+
